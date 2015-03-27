@@ -12,3 +12,4 @@
 /// <reference path="lib/bootstrap/js/npm.js" />
 /// <reference path="lib/angular/angular.js" />
 /// <reference path="lib/angular-ui-router/angular-ui-router.js" />
+/// <reference path="../app/controllers/overviewcontroller.js" />

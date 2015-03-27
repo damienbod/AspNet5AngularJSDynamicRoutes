@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 		},
 		uglify: {
 			my_target: {
-				files: { 'wwwroot/app.js': ['app/app.js', 'AngularApp/**/*.js'] }
+				files: { 'wwwroot/app.js': ['app/app.js', 'app/**/*.js'] }
 			}
 		},
 		watch: {

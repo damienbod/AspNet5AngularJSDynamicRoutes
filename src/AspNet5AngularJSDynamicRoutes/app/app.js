@@ -15,3 +15,12 @@
 
 
 })();
+
+//resolve: {
+
+//	FastestAnimalService: "FastestAnimalService",
+
+//	fastestAnimals: function (FastestAnimalService) {
+//		return FastestAnimalService.getAnimals().$promise;
+//	}
+//}

@@ -13,9 +13,10 @@
 			});
 		}
 
-		var getAnimal = function (id) {
-			$log.info("FastestAnimalService getAnimal called");
-			return $http.get("/api/FastestAnimal/" + id)
+		var getAnimal = function (animalId) {
+			$log.info("FastestAnimalService getAnimal called: " + animalId);
+			$log.info(animalId);
+			return $http.get("/api/FastestAnimal/" + animalId.animalId)
 			.then(function (response) {
 				return response.data;
 			});

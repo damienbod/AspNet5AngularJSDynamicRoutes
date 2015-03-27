@@ -1,29 +1,28 @@
-﻿overview
-<div ui-view>
-	<!--Overview
-	<div class="container">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title">{{message}}</h3>
-			</div>
-			<div class="panel-body">
-				<table class="table">
-					<thead>
-						<tr>
-							<th>Name of Animal</th>
-							<th>Speed</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr ng-repeat="animal in animals">
-							<td><a href="#/details/{{animal.Id}}">{{animal.AnimalName}}</a></td>
-							<td>{{animal.Speed}}</td>
-						</tr>
-					</tbody>
-				</table>
-
-			</div>
+﻿<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">{{message}}</h3>
 		</div>
-	</div>-->
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Name of Animal</th>
+						<th>Speed</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="animal in animals">
+						<td><a href="#/home/overview/details/{{animal.Id}}">{{animal.AnimalName}}</a></td>
+						<td>{{animal.Speed}}</td>
+					</tr>
+				</tbody>
+			</table>
 
+		</div>
+	</div>
 </div>
+
+<hr />
+
+<div ui-view></div>

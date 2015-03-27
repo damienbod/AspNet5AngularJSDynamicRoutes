@@ -19,7 +19,16 @@
                         	}
                         })
 							.state("details", {
-								parent: "overview", url: "/details", templateUrl: "/templates/details.html"
+								parent: "overview", url: "/details/:animalId", templateUrl: "/templates/details.html", controller: "DetailsController",
+								resolve: {
+									FastestAnimalService: "FastestAnimalService",
+
+									fastestAnimal: ["FastestAnimalService", "$stateParams", function (FastestAnimalService, $stateParams) {
+										var animalId = $stateParams.animalId;
+										console.log($stateParams.animalId);
+										return FastestAnimalService.getAnimal({ animalId: animalId });
+									}]
+								}
 							})
         }
 	]

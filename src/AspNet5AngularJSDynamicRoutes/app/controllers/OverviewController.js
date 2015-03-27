@@ -9,6 +9,7 @@
 			"$scope",
 			"$log",
 			"fastestAnimals",
+			//"fastestAnimals",
 			OverviewController
 		]
 	);

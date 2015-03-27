@@ -3,10 +3,10 @@
 
 	mainApp.config(["$stateProvider", "$urlRouterProvider",
 		function ($stateProvider, $urlRouterProvider) {
-            	//$urlRouterProvider.otherwise("/home");
+            	$urlRouterProvider.otherwise("/home/overview");
 
             	$stateProvider
-                    .state("home", { url: "/home", templateUrl: "/templates/home.html" })
+                    .state("home", { abstract: true, url: "/home", templateUrl: "/templates/home.html" })
                         .state("overview", {
                         	parent: "home", url: "/overview", templateUrl: "/templates/overview.html", controller: "OverviewController",
                         	resolve: {

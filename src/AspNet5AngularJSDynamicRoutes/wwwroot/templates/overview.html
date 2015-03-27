@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿<div class="col-xs-5">
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<h3 class="panel-title">{{message}}</h3>
@@ -12,7 +12,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="animal in animals">
+					<tr style="height:20px;" ng-repeat="animal in animals">
 						<td><a href="#/home/overview/details/{{animal.Id}}">{{animal.AnimalName}}</a></td>
 						<td>{{animal.Speed}}</td>
 					</tr>
@@ -23,6 +23,4 @@
 	</div>
 </div>
 
-<hr />
-
-<div ui-view></div>
+<div class="col-xs-5" ui-view></div>

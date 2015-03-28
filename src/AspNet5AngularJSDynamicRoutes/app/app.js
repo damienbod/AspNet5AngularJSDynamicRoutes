@@ -46,20 +46,12 @@
 		})
 
 		$rootScope.$on('$stateNotFound', function (event, unfoundState, fromState, fromParams) {
-			console.log(unfoundState.to); // "lazy.state"
-			console.log(unfoundState.toParams); // {a:1, b:2}
-			console.log(unfoundState.options); // {inherit:false} + default options
+			console.log(event);
+			console.log(unfoundState);
+			console.log(fromState);
+			console.log(fromParams);
 		})
 
 	}]);
 
 })();
-
-//resolve: {
-
-//	FastestAnimalService: "FastestAnimalService",
-
-//	fastestAnimals: function (FastestAnimalService) {
-//		return FastestAnimalService.getAnimals().$promise;
-//	}
-//}

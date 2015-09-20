@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22609.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FCBFD1D-FF5C-4EA5-950D-36B4B888B80A}"
 EndProject
@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNet5AngularJSDynamicRoutes", "src\AspNet5AngularJSDynamicRoutes\AspNet5AngularJSDynamicRoutes.kproj", "{946C0935-E2A7-4D5C-A656-E3B0205A1C2B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNet5AngularJSDynamicRoutes", "src\AspNet5AngularJSDynamicRoutes\AspNet5AngularJSDynamicRoutes.xproj", "{946C0935-E2A7-4D5C-A656-E3B0205A1C2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,4 +13,4 @@
 /// <reference path="lib/angular/angular.js" />
 /// <reference path="lib/angular-ui-router/angular-ui-router.js" />
 /// <reference path="../app/controllers/overviewcontroller.js" />
-/// <reference path="../app/controllers/detailscontroller.js" />
+/// <reference path="../app/controllers/DetailsController.js" />

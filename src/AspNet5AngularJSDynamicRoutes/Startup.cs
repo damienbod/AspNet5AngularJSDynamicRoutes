@@ -17,19 +17,23 @@ namespace AspNet5AngularJSDynamicRoutes
 			services.AddMvc();
 		}
 
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
-		{
-			loggerfactory.AddConsole();
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.MinimumLevel = LogLevel.Information;
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
 
-			app.UseStaticFiles();
+            app.UseIISPlatformHandler();
 
-			app.UseMvc(routes =>
-			{
-				routes.MapRoute(
-					name: "default",
-					template: "{controller}/{action}/{id?}",
-					defaults: new { controller = "Home", action = "Index" });
-			});
-		}
-	}
+            app.UseExceptionHandler("/Home/Error");
+
+            app.UseStaticFiles();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+        }
+    }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using AspNet5AngularJSDynamicRoutes.Models;
 

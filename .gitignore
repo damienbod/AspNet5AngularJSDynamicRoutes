@@ -5,3 +5,5 @@ src/AspNet5AngularJSDynamicRoutes/bower_components
 src/AspNet5AngularJSDynamicRoutes/AspNet5AngularJSDynamicRoutes.kproj.user
 src/AspNet5AngularJSDynamicRoutes/bin
 src/AspNet5AngularJSDynamicRoutes/obj
+src/AspNet5AngularJSDynamicRoutes/AspNet5AngularJSDynamicRoutes.xproj.user
+src/AspNet5AngularJSDynamicRoutes/project.lock.json
